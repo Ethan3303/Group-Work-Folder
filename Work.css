@@ -1,0 +1,33 @@
+
+
+
+#boxer{
+    text-align:center;
+}
+
+#phone{
+   
+    width:79%;
+    
+
+}
+
+#box{
+
+    position:relative;
+    
+    background-color:rgba(176, 181, 192, 0.717);
+    text-align: center;
+    size:25%;
+    margin-top:-65%;
+    margin-right:35%;
+    margin-left:35%;
+    padding-bottom:44%;
+    
+    
+}
+
+#head{
+    background-color:green;
+    padding-bottom:20%;
+}
