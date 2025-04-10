@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #446672;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -59,12 +67,22 @@ body {
     font-size: 24px;
     font-weight: 600;
     color: white;
-    background-color: #3066BE;
+    background-color: var(--primary-color);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.app-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url("/images/thumbnail.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 15px;
 }
 
 #content {
@@ -91,7 +109,11 @@ body {
 }
 
 .nav-item.active {
-    color: #3066BE;
+    color: var(--primary-color);
+}
+
+.nav-item:hover {
+    color: var(--primary-color);
 }
 
 .nav-icon {
