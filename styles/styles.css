@@ -81,6 +81,7 @@ body {
     background-image: url("/images/thumbnail.png");
     background-size: cover;
     background-position: center;
+    
     position: absolute;
     right: 15px;
 }
@@ -113,6 +114,8 @@ body {
 }
 
 .nav-item:hover {
+    transform: translateY(-1px);
+    transition: transform 0.2s ease;
     color: var(--primary-color);
 }
 
@@ -126,4 +129,10 @@ body {
     left: 15px;
     font-size: 18px;
     cursor: pointer;
+}
+
+.back-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
 }
