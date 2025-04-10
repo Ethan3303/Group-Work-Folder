@@ -21,10 +21,10 @@
                 </div>
             </div>
             <div id="page-title">
-                <span class="settings-icon" onclick="toggleSettingsDropdown()">
+                <span class="settings-icon" onmouseenter="toggleSettingsDropdown(true)" onmouseleave="toggleSettingsDropdown(false)">
                     <i class="fas fa-cog"></i>
                 </span>
-                <div class="dropdown-content" id="settingsDropdown">
+                <div class="dropdown-content" id="settingsDropdown" onmouseleave="toggleSettingsDropdown(false)">
                     <a href="./settings.html">Settings</a>
                     <a href="./account.html">Account</a>
                 </div>

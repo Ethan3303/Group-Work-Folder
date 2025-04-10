@@ -8,6 +8,11 @@
     color: white;
 }
 
+.settings-icon:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
