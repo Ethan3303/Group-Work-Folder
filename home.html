@@ -3,42 +3,53 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>ParkEasy - Find Parking Anywhere</title>
-        <meta name="description" content="Find and reserve parking spaces near you">
+        <title>Parkly</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/home.css">
+        <script src="./index.js"></script>
     </head>
     <body>
         <div id="phone">
             <div id="notch">
-                <p id="time">10:23</p>
+                <p id="time"></p>
                 <div class="status-icons">
                     <i class="fas fa-signal"></i>
                     <i class="fas fa-wifi"></i>
                     <i class="fas fa-battery-full"></i>
                 </div>
             </div>
-            <div id="page-title">Find Parking</div>
-            <div id="content">
-                
+            <div id="page-title">
+                <span class="settings-icon" onclick="toggleSettingsDropdown()">
+                    <i class="fas fa-cog"></i>
+                </span>
+                <div class="dropdown-content" id="settingsDropdown">
+                    <a href="./settings.html">Settings</a>
+                    <a href="./account.html">Account</a>
+                </div>
+                Home
             </div>
-            <div class="nav-bar">
-                <div class="nav-item">
-                    <div class="nav-icon"><i class="fas fa-home"></i></div>
-                    <div>Home</div>
+            <div id="content">
+                <div class="button-container">
+                    <a href="./account.html" class="menu-button">
+                        <i class="fas fa-user"></i>
+                        <span>Account</span>
+                    </a>
+                    <a href="./bookings.html" class="menu-button">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Bookings</span>
+                    </a>
                 </div>
-                <div class="nav-item active">
-                    <div class="nav-icon"><i class="fas fa-search"></i></div>
-                    <div>Find</div>
+                <div class="button-container-single">
+                    <a href="./history.html" class="menu-button">
+                        <i class="fas fa-history"></i>
+                        <span>History</span>
+                    </a>
                 </div>
-                <div class="nav-item">
-                    <div class="nav-icon"><i class="fas fa-ticket-alt"></i></div>
-                    <div>Bookings</div>
-                </div>
-                <div class="nav-item">
-                    <div class="nav-icon"><i class="fas fa-user"></i></div>
-                    <div>Account</div>
+                <div class="app-description">
+                    <h3>App Description</h3>
+                    <p>Here at Parkly we take away the frustration of trying to find a parking space. Instead our easy-to-sue app will find nearby parking peer reviewed by other users in seconds.</p>
                 </div>
             </div>
         </div>
