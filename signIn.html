@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Parkly/SignIn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="styles/signIn.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="./index.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    </head>
+    <body>
+        <div id="phone">
+            <div id="notch">
+                <p id="time">10:23</p>
+                <div class="status-icons">
+                    <i class="fas fa-signal"></i>
+                    <i class="fas fa-wifi"></i>
+                    <i class="fas fa-battery-full"></i>
+                </div>
+            </div>
+            <div id="page-title">
+                <span class="back-button" onclick="location.href='./home.html';">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                Sign In
+            </div>
+            <div id="subheading">
+                <h2>Welcome back!</h2>
+                 <h4>Please sign in to your account.</h4>
+            </div>
+            <div id="form">
+                <div class="sign-in-form">
+                    <form>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <button type="submit">Sign In</button>
+                    </form>
+
+                </div>
+                
+            </div>
+            <div id="google-sign-in">
+                <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline" data-text="sign_in_with" data-size="large" data-logo_alignment="left"></div>
+                <script src="https://accounts.google.com/gsi/client" async defer></script>
+            </div>
+            <div id="footer">
+                <p>Forgot your password? <a href="./resetPassword.html">Reset it</a></p>
+                <p>Don't have an account? <a href="./signUp.html">Sign Up</a></p>
+            </div>
+            <div class="nav-bar">
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-home"></i></div>
+                    <div>Home</div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-search"></i></div>
+                    <div>Find</div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-ticket-alt"></i></div>
+                    <div>Bookings</div>
+                </div>
+                <div class="nav-item active">
+                    <div class="nav-icon"><i class="fas fa-user"></i></div>
+                    <div>Account</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
