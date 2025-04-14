@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -54,17 +53,26 @@ body {
     gap: 5px;
 }
 
-#page-title {
+#page-title-sign-in {
     padding: 10px;
     font-size: 24px;
     font-weight: 600;
     color: white;
-    background-color: #3066BE;
+    background-color: var(--primary-color);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    text-align: center;
+}
+
+#title {
+    font-size: 24px;
+    font-weight: 600;
+    padding-right: -10;
+    color: white;
+   
 }
 
 #subheading {
@@ -75,7 +83,7 @@ body {
 }
 
 #google-sign-in{
-    padding: 100px;
+    padding: 30px;
     align-items: center;
     /* position: relative; */
     flex: 1;
@@ -85,6 +93,15 @@ body {
 
 #form {
     padding: 100px;
+    align-items: center;
+    /* position: relative; */
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+}
+
+#footer {
+    padding: 40px;
     align-items: center;
     /* position: relative; */
     flex: 1;
