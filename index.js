@@ -1,3 +1,5 @@
+console.log("index.js loaded");
+
 function toggleSettingsDropdown(open) {
     const element = document.getElementById("settingsDropdown");
     // if not open and element has mouse hovering over it, do not close it
@@ -13,4 +15,4 @@ function changeTime() {
 }
 
 setInterval(changeTime, 10000);
-document.addEventListener("DOMContentLoaded", changeTime);
+changeTime();

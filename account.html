@@ -1,74 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Parkly</title>
-        <link rel="icon" type="image/png" href="/images/thumbnail.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/home.css">
-        <script src="/index.js"></script>
-    </head>
-    <body>
-        <div id="phone">
-            <div id="notch">
-                <p id="time"></p>
-                <div class="status-icons">
-                    <i class="fas fa-signal"></i>
-                    <i class="fas fa-wifi"></i>
-                    <i class="fas fa-battery-full"></i>
-                </div>
-            </div>
-            <div id="page-title">
-                <div class="top-left">
-                    <span class="settings-icon" onmouseenter="toggleSettingsDropdown(true)" onmouseleave="toggleSettingsDropdown(false)">
-                        <i class="fas fa-cog"></i>
-                    </span>
-                    <div class="dropdown-content" id="settingsDropdown" onmouseleave="toggleSettingsDropdown(false)">
-                        <a href="./settings.html">Settings</a>
-                        <a href="./help.html">Help & FAQ</a>
-                    </div>
-                </div>
-            
-                <div class="logo">Parkly</div>
-            
-                <div class="top-right">
-                    <span class="notifications-icon" onclick="location.href='./notification.html'">
-                        <i class="fas fa-bell"></i>
-                    </span>
-                </div>
-            </div>
-            <div id="content">
-                
-            </div>
-            <div class="nav-bar">
-                <a href="/home.html">
-                    <div class="nav-item">
-                        <div class="nav-icon"><i class="fas fa-home"></i></div>
-                        <div>Home</div>
-                    </div>
-                </a>
-                <a href="/book.html">
-                    <div class="nav-item">
-                        <div class="nav-icon"><i class="fas fa-ticket-alt"></i></div>
-                        <div>Book</div>
-                    </div>
-                </a>
-                <a href="/history.html">
-                    <div class="nav-item">
-                        <div class="nav-icon"><i class="fas fa-receipt"></i></div>
-                        <div>History</div>
-                    </div>
-                </a>
-                <a href="/account.html">
-                    <div class="nav-item active">
-                        <div class="nav-icon"><i class="fas fa-user"></i></div>
-                        <div>Account</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </body>
+<head>
+    <!-- Script will load boilerplate of the phone prototype so that we do not have to worry about changes being synced and such -->
+    <script>
+        const thisTitle = "account"; // Change this to the current page title
+        fetch("phone.html").then(response => response.text()).then(data => {
+            const contentToAdd = document.getElementById("content-container");
+            document.documentElement.innerHTML = data;
+            const nav = document.getElementById(`nav-${thisTitle}`);
+            if (nav) {
+                nav.classList.add("active");
+            }
+            const content = document.getElementById("content");
+            content.innerHTML = contentToAdd.innerHTML;
+            const script = document.createElement("script");
+            script.src = "index.js";
+            document.body.appendChild(script);
+        });
+    </script>
+</head>
+<body>
+    <div id="content-container">
+        <h1>hello</h1>
+    </div>
+</body>
 </html>
