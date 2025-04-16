@@ -7,7 +7,7 @@
     <title>Parkly/SignIn</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/signIn.css">
+    <link rel="stylesheet" href="styles/signup.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/home.css">
     <script src="./index.js"></script>
@@ -53,34 +53,42 @@
             <h2 id="title-banner">Sign In</h2>
         </div> -->
         <div id="subheading">
-            <h2>Welcome back!</h2>
-            <h4>Please sign in to your account.</h4>
+            <h2>Welcome to Parkly!</h2>
+            <h4>Please create an account.</h4>
         </div>
         <div id="form">
             <div class="sign-in-form">
                 <form>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                    <button type="submit">Sign In</button>
+                    <label for="phnumber">Phone Number:</label>
+                    <input type="number" id="phnumber" name="phnumber">
+                    <label for="pic">Profile Pic:</label>
+                    <input type="file" id="pic" name="pic">
+                    <label for="password1">Password:</label>
+                    <input type="password" id="password1" name="password1" required>
+                    <label for="password2">Repeat password:</label>
+                    <input type="password" id="password2" name="password2" required>
+                    <label for="licence">Licence plate:</label>
+                    <input type="text" id="lplate" name="lplate" required>
+                    <button type="submit">Sign Up</button>
                 </form>
 
             </div>
 
         </div>
-        <div id="google-sign-in">
-            <img src="images/OIP.jpg" alt="Sign in with Google" id="google-sign-in-button"
-                style="width:250px;height:80px;">
-            <!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
-        </div>
-        <div id="footer">
-            <p>Forgot your password? <a href="./ForgottenPas.html">Reset it</a></p>
-            <p>Don't have an account? <a href="./signUp.html">Sign Up</a></p>
+        
+        <div id="Guest">
+            <p>Sign in now? <a href="./signIn.html">Sign in</a></p>
+            <p>Sign in as guest? <a href="./home.html">Guest</a></p>
         </div>
         <div class="nav-bar">
             <div class="nav-item">
-                <div class="nav-icon"><i class="fas fa-home"></i></div>
+                <div class="nav-icon" ><i class="fas fa-home"></i></div>
                 <div>Home</div>
             </div>
             <div class="nav-item">
