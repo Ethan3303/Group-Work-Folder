@@ -1,10 +1,11 @@
+/* ACCOUNT CSS */
 #pfpim{
     width:50%;
     border:3px solid #446672;
     
 }
 
-#acccon{
+.acccon{
     margin:10%;
 }
 
@@ -26,3 +27,97 @@
 #bz:active {
     transform: scale(0.98);
 }
+
+/* REVIEW CSS */
+
+#deets{
+    
+    margin:3%
+}
+
+#revstar{
+    border:3px solid #446672;
+    
+    width:40%;
+    float:left;
+    margin-bottom:1%;
+    padding:2%;
+      
+}
+
+#revstarinf{
+    border:3px solid #446672;
+    
+    width:40%;
+    float:left;
+    margin-bottom:1%;
+    padding:2%;
+      
+}
+
+
+.rm{
+    float:right;
+    margin-right:5%
+}
+a{
+    font-size:60%
+    
+}
+hr{
+    margin-top:15%;
+    margin-bottom:10%;
+}
+.hor{
+    margin-top:3%;
+    margin-bottom:7%;
+}
+
+#revcoms{
+    border:3px solid #446672;
+    height:30%;
+    width:58%;
+    float: right;
+    margin-bottom:1%;
+    padding:2%;
+    
+
+}
+
+.stim{
+    width:100%;
+}
+
+.stim1{
+    width:50%;
+}
+
+.leftinf{
+    float:left;
+    margin-left:5%
+}
+
+#botbut{
+    
+    text-align:center;
+    display:flex;
+    justify-content: space-evenly;
+    padding:22%;
+    margin-left:-15%;
+    margin-right:-15%;
+}
+
+#bz1{
+   
+    padding:10%;
+    background-color: #446672;
+    border-radius: 10px;
+    border:solid white;
+    box-sizing: border-box;
+    color:white;
+}
+
+#bz1:active {
+    transform: scale(0.98);
+}
+
