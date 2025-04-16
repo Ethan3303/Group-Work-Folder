@@ -1,32 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Invoice - Parkly</title>
-    <link rel="icon" type="image/png" href="/images/thumbnail.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="./index.js"></script>
+    <!-- Script will load boilerplate of the phone prototype so that we do not have to worry about changes being synced and such -->
+    <script>
+        const thisTitle = "history"; // Change this to the current page title
+        fetch("phone.html").then(response => response.text()).then(data => {
+            const contentToAdd = document.getElementById("content-container");
+            document.documentElement.innerHTML = data;
+            const nav = document.getElementById(`nav-${thisTitle}`);
+            if (nav) {
+                nav.classList.add("active");
+            }
+            const content = document.getElementById("content");
+            content.innerHTML = contentToAdd.innerHTML;
+            const script = document.createElement("script");
+            script.src = "index.js";
+            document.body.appendChild(script);
+        });
+    </script>
 </head>
 <body>
-    <div id="phone">
-        <div id="notch">
-            <p id="time">12:00</p>
-            <div class="status-icons">
-                <i class="fas fa-signal"></i>
-                <i class="fas fa-wifi"></i>
-                <i class="fas fa-battery-full"></i>
-            </div>
-        </div>
-        <div id="page-title">
-            <span class="back-button" onclick="history.back();">
-                <i class="fas fa-chevron-left"></i>
-            </span>
-            Invoice
-            <i class="app-icon"></i>
-        </div>
-
+    <div id="content-container">
         <div class="invoice-wrapper">
             <div class="invoice-card">
                 <div class="invoice-title">Parking Receipt</div>
@@ -69,9 +63,8 @@
             </div>
         </div>
     </div>
-
     <script>
-            const invoiceData = {
+        const invoiceData = {
         1: {
             location: "Trinity Leeds Car Park",
             datetime: "07 Mar 2025, 6:20 PM",

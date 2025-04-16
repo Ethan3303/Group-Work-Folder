@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Script will load boilerplate of the phone prototype so that we do not have to worry about changes being synced and such -->
+    <script>
+        const thisTitle = "account"; // Change this to the current page title
+        fetch("phone.html").then(response => response.text()).then(data => {
+            const contentToAdd = document.getElementById("content-container");
+            document.documentElement.innerHTML = data;
+            const nav = document.getElementById(`nav-${thisTitle}`);
+            if (nav) {
+                nav.classList.add("active");
+            }
+            const content = document.getElementById("content");
+            content.innerHTML = contentToAdd.innerHTML;
+            const script = document.createElement("script");
+            script.src = "index.js";
+            document.body.appendChild(script);
+        });
+    </script>
+</head>
+<body>
+    <div id="content-container">
+        <div id="content" class="notifications-content">
+            <div class="notification">
+                <div class="notification-icon"><i class="fas fa-bell"></i></div>
+                <div class="notification-details">
+                    <strong>Upcoming Reservation</strong>
+                    <p>Trinity Leeds Car Park at 6:20 PM today</p>
+                    <span class="timestamp">Today, 4:00 PM</span>
+                </div>
+            </div>
+
+            <div class="notification">
+                <div class="notification-icon"><i class="fas fa-exclamation-circle"></i></div>
+                <div class="notification-details">
+                    <strong>Meter Expiring Soon</strong>
+                    <p>Leeds Dock Parking expires in 15 minutes</p>
+                    <span class="timestamp">Today, 11:45 AM</span>
+                </div>
+            </div>
+
+            <div class="notification">
+                <div class="notification-icon"><i class="fas fa-receipt"></i></div>
+                <div class="notification-details">
+                    <strong>Invoice Ready</strong>
+                    <p>Your invoice for Q-Park Albion Street is now available</p>
+                    <span class="timestamp">Yesterday, 10:35 AM</span>
+                </div>
+            </div>
+
+            <div class="notification">
+                <div class="notification-icon"><i class="fas fa-calendar-check"></i></div>
+                <div class="notification-details">
+                    <strong>Booking Confirmed</strong>
+                    <p>Reservation at Woodhouse Lane Car Park confirmed</p>
+                    <span class="timestamp">2 days ago</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
