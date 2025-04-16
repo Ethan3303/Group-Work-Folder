@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/signIn.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/home.css">
     <script src="./index.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
@@ -23,15 +24,54 @@
                 <i class="fas fa-battery-full"></i>
             </div>
         </div>
-        <div id="page-title-sign-in">
+        <div id="page-title">
+            <div class="top-left">
+                <!-- <span class="settings-icon" onmouseenter="toggleSettingsDropdown(true)" onmouseleave="toggleSettingsDropdown(false)">
+                    <i class="fas fa-cog"></i>
+                </span>
+                <div class="dropdown-content" id="settingsDropdown" onmouseleave="toggleSettingsDropdown(false)">
+                    <a href="./settings.html">Settings</a>
+                    <a href="./help.html">Help & FAQ</a>
+                </div> -->
+                <span class="back-button" onclick="location.href='./home.html';">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+            </div>
+        
+            <div class="logo">Sign In: help</div>
+        
+            <div class="top-right">
+                <span class="notifications-icon" onclick="location.href='./notification.html'">
+                    <i class="fas fa-bell"></i>
+                </span>
+            </div>
+        </div>
+        <!-- <div id="page-title-sign-in">
             <span class="back-button" onclick="location.href='./home.html';">
                 <i class="fas fa-chevron-left"></i>
             </span>
             <h2 id="title-banner">Sign In</h2>
-        </div>
+        </div> -->
         <div id="subheading">
-            <h2>Welcome back!</h2>
-            <h4>Please sign in to your account.</h4>
+            <h2>Forgotten password?</h2>
+            <h5>Enter your details and you will be sent a temporary password.<br> Once signed in please change your password in Account.</h5>
+        </div>
+        <div id="form">
+            <div class="sign-in-form">
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <p>or</p>
+                    <label for="phnumber">Phone number:</label>
+                    <input type="number" id="phnumber" name="phnumber">
+                    <button type="submit">submit</button>
+                </form>
+
+            </div>
+
+        </div>
+        <div id="code">
+
         </div>
         <div class="nav-bar">
             <div class="nav-item">
