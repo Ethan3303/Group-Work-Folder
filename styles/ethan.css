@@ -121,3 +121,13 @@ hr{
     transform: scale(0.98);
 }
 
+
+/* PAYMENT */
+
+#pim{
+    width:80%;
+}
+
+#central{
+    text-align:center;
+}
