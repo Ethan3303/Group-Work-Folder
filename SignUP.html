@@ -58,7 +58,7 @@
         </div>
         <div id="form">
             <div class="sign-in-form">
-                <form action="/home.html">
+                <form action="/signIn.html">
                     <label for="fname">First Name:</label>
                     <input type="text" id="fname" name="fname" placeholder="John" required>
                     <label for="lname">Last Name:</label>
@@ -83,26 +83,34 @@
         </div>
         
         <div id="Guest">
-            <p>Sign in now? <a href="./signIn.html">Sign in</a></p>
+            <p>Already have an account? <a href="./signIn.html">Sign in</a></p>
             <p>Sign in as guest? <a href="./home.html">Guest</a></p>
         </div>
         <div class="nav-bar">
-            <div class="nav-item">
-                <div class="nav-icon" ><i class="fas fa-home"></i></div>
-                <div>Home</div>
-            </div>
-            <div class="nav-item">
-                <div class="nav-icon"><i class="fas fa-search"></i></div>
-                <div>Find</div>
-            </div>
-            <div class="nav-item">
-                <div class="nav-icon"><i class="fas fa-ticket-alt"></i></div>
-                <div>Bookings</div>
-            </div>
-            <div class="nav-item active">
-                <div class="nav-icon"><i class="fas fa-user"></i></div>
-                <div>Account</div>
-            </div>
+            <a href="/home.html">
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-home"></i></div>
+                    <div>Home</div>
+                </div>
+            </a>
+            <a href="/book.html">
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-ticket-alt"></i></div>
+                    <div>Book</div>
+                </div>
+            </a>
+            <a href="/history.html">
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-receipt"></i></div>
+                    <div>History</div>
+                </div>
+            </a>
+            <a href="/account.html">
+                <div class="nav-item active">
+                    <div class="nav-icon"><i class="fas fa-user"></i></div>
+                    <div>Account</div>
+                </div>
+            </a>
         </div>
     </div>
 </body>
