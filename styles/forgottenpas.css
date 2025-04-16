@@ -82,30 +82,12 @@ body {
     text-align: center;
 }
 
-#google-sign-in{
-    padding: 30px;
-    align-items: center;
-    /* position: relative; */
-    flex: 1;
-    overflow-y: hidden;
-    background-color: #f8f9fa;
-}
-
 #form {
     padding: 100px;
     align-items: center;
     /* position: relative; */
     flex: 1;
     /* overflow-y: scroll; */
-    background-color: #f8f9fa;
-}
-
-#footer {
-    padding: 40px;
-    align-items: center;
-    /* position: relative; */
-    flex: 1;
-    overflow-y: hidden;
     background-color: #f8f9fa;
 }
 
