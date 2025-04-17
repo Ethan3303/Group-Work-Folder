@@ -134,6 +134,7 @@ hr{
     justify-content: center;
     display:inline-flex;
     align-items: center;
+    margin-bottom:5%;
     background-color: var(--primary-color);
     color: white;
     margin-left:2%;
