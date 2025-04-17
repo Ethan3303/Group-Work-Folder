@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Parkly</title>
+    <link rel="icon" type="image/png" href="/images/thumbnail.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/ethan.css">
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <div id="phone">
+        <div id="notch">
+            <p id="time"></p>
+            <div class="status-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+        <div id="page-title">
+            <div class="top-left">
+                <span class="settings-icon" onmouseenter="toggleSettingsDropdown(true)"
+                    onmouseleave="toggleSettingsDropdown(false)">
+                    <i class="fas fa-cog"></i>
+                </span>
+                <div class="dropdown-content" id="settingsDropdown" onmouseleave="toggleSettingsDropdown(false)">
+                    <a href="./settings.html">Settings</a>
+                    <a href="./help.html">Help & FAQ</a>
+                </div>
+            </div>
+
+            <div class="logo">Parkly</div>
+
+            <div class="top-right">
+                <span class="notifications-icon" onclick="location.href='./notification.html'">
+                    <i class="fas fa-bell"></i>
+                </span>
+            </div>
+        </div>
+        <div id="content">
+            <div id="central">
+                <br>
+                <h2>Payment Options</h1><br>
+                    <form>
+                        <input type="radio" name="pay" value="pay1">
+                        <label for="pay1">PayPal</label>
+                        <input type="radio" name="pay" value="pay2">
+                        <label for="pay2">MasterCard</label>
+                        <input type="radio" name="pay" value="pay3">
+                        <label for="pay3">Visa</label><br>
+                        <input type="radio" name="pay" value="pay4">
+                        <label for="pay4">Maestro</label>
+                        <input type="radio" name="pay" value="pay5">
+                        <label for="pay5">Apple Pay</label>
+                        <input type="radio" name="pay" value="pay6">
+                        <label for="pay6">Amazon pay</label><br>
+                        <input type="radio" name="pay" value="pay6">
+                        <label for="pay6">Google pay</label>
+                        <input type="radio" name="pay" value="pay6">
+                        <label for="pay6">Stripe</label>
+                        <br>
+                        <br>
+                        <img id="pim" src="images/pay.jpg">
+                    </form>
+                    <br>
+                    <label for="cardname">Cardholder name</label>
+                    <br>
+                    <input id="cardname">
+                    <br>
+                    <label for="cardnum">Card Number</label>
+                    <br>
+                    <input id="cardnum">
+                    <br>
+
+
+                    
+                    <label for="cvv">CVV</label> <br>
+                    <input id="cvv"><br>
+                    <label for="exdat">Expiration Date</label><br>
+                    <input id="exdat">
+                    
+            </div>
+            <br>
+            <div id="butzone">
+                <a href="#" class="bz">Go back</a>
+                <a href="#" class="bz">Continue with booking</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

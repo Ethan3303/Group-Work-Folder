@@ -7,7 +7,7 @@
     <title>Parkly/SignIn</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/signIn.css">
+    <link rel="stylesheet" href="styles/signup.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/home.css">
     <script src="./index.js"></script>
@@ -38,7 +38,7 @@
                 </span>
             </div>
 
-            <div class="logo">Sign In</div>
+            <div class="logo">Sign Up</div>
 
             <div class="top-right">
                 <span class="notifications-icon" onclick="location.href='./notification.html'">
@@ -53,35 +53,39 @@
             <h2 id="title-banner">Sign In</h2>
         </div> -->
         <div id="subheading">
-            <h2>Welcome back!</h2>
-            <h4>Please sign in to your account.</h4>
+            <h2>Welcome to Parkly!</h2>
+            <h4>Please create an account.</h4>
         </div>
         <div id="form">
             <div class="sign-in-form">
-                <form action="/home.html">
+                <form action="/signIn.html">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="John" required>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Doe" required>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <p>Or</p>
-                    <label for="phone">Phone:</label>
-                    <input type="number" name="phone">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                    <button type="submit" id="bz">Sign In</button>
+                    <input type="email" id="email" name="email" placeholder="example@examp.com" required>
+                    <label for="phnumber">Phone Number:</label>
+                    <input type="number" id="phnumber" name="phnumber" placeholder="12345 678990">
+                    <label for="pic">Profile Pic:</label>
+                    <input type="file" id="pic" name="pic">
+                    <label for="password1">Password:</label>
+                    <input type="password" id="password1" name="password1" maxlength="8" required>
+                    <label for="password2">Repeat Password:</label>
+                    <input type="password" id="password2" name="password2" maxlength="8" required>
+                    <label for="licence">Licence plate:</label>
+                    <input type="text" id="lplate" name="lplate" required>
+                    
+                    <button type="submit" id="bz"><a href="./home.html"></a> Sign Up</button>
                 </form>
 
             </div>
 
         </div>
-        <div id="google-sign-in">
-            <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=175&id=264960&wreply=https%3a%2f%2fwww.bing.com%2fsecure%2fPassport.aspx%3fedge_suppress_profile_switch%3d1%26requrl%3dhttps%253a%252f%252fwww.bing.com%252fsearch%253fq%253dhtml%252520image%252520as%252520link%252520to%252520google%252520sign%252520in%2526qs%253dn%2526form%253dQBRE%2526sp%253d-1%2526ghc%253d1%2526lq%253d0%2526pq%253dhtml%252520image%252520as%252520link%252520to%252520google%252520sign%252520in%2526sc%253d9-36%2526sk%253d%2526cvid%253dA9D67E6A2AE64E6B9D536CBA51E0EBF1%2526wlsso%253d1%2526wlexpsignin%253d1%26sig%3d2CF6E85A63C1681C186EFD8A626D6977%26nopa%3d2&wp=MBI_SSL&lc=2057&CSRFToken=0439d91e-7acb-4972-a4dc-0826fff7248b&cobrandid=c333cba8-c15c-4458-b082-7c8ce81bee85&nopa=2">
-                <img src="images/OIP.jpg" alt="Sign in with Google" id="google-sign-in-button"
-                    style="width:250px;height:80px;">
-                <!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
-            </a>
-        </div>
-        <div id="footer">
-            <p>Forgot your password? <a href="./ForgottenPas.html">Reset it</a></p>
-            <p>Don't have an account? <a href="./signUp.html">Sign Up</a></p>
+
+        <div id="Guest">
+            <p>Already have an account? <a href="./signIn.html">Sign in</a></p>
+            <p>Sign in as guest? <a href="./home.html">Guest</a></p>
         </div>
         <div class="nav-bar">
             <a href="/home.html">

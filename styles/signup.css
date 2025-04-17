@@ -84,8 +84,6 @@ body {
 
 #google-sign-in{
     padding: 30px;
-    height: 100%;
-    display: flex;
     align-items: center;
     /* position: relative; */
     flex: 1;
@@ -95,19 +93,21 @@ body {
 
 #form {
     padding: 100px;
-    height: 100%;
     align-items: center;
     /* position: relative; */
     flex: 1;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
+    overflow-x: hidden;
     background-color: #f8f9fa;
 }
 
-#footer {
+#Guest {
     padding: 40px;
     align-items: center;
-    /* position: relative; */
-    flex: 1;
+    text-align: center;
+    /* bottom: 0; */
+    display: flex;
+    flex-direction: column;
     overflow-y: hidden;
     background-color: #f8f9fa;
 }

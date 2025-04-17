@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Parkly</title>
+        <link rel="icon" type="image/png" href="/images/thumbnail.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/ethan.css">
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <div id="phone">
+            <div id="notch">
+                <p id="time"></p>
+                <div class="status-icons">
+                    <i class="fas fa-signal"></i>
+                    <i class="fas fa-wifi"></i>
+                    <i class="fas fa-battery-full"></i>
+                </div>
+            </div>
+            <div id="page-title">
+                <div class="top-left">
+                    <span class="settings-icon" onmouseenter="toggleSettingsDropdown(true)" onmouseleave="toggleSettingsDropdown(false)">
+                        <i class="fas fa-cog"></i>
+                    </span>
+                    <div class="dropdown-content" id="settingsDropdown" onmouseleave="toggleSettingsDropdown(false)">
+                        <a href="./settings.html">Settings</a>
+                        <a href="./help.html">Help & FAQ</a>
+                    </div>
+                </div>
+            
+                <div class="logo">Parkly</div>
+            
+                <div class="top-right">
+                    <span class="notifications-icon" onclick="location.href='./notification.html'">
+                        <i class="fas fa-bell"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="content1">
+                <div id="deets">
+                    <h2>Reviews for Location:</h2>
+                    <p>Location Name Here</p>
+                    <br>
+                    <div id="revstar">
+                        <h4>rating</h4>
+                    </div>
+                    <div id="revcoms">
+                        <h4>reviews</h4>
+                    </div>
+                    <div id="revstarinf">
+                        <img class="stim" src="images/stars5.jpg">
+                        <a class="leftinf" href="#">(8) See all</a>
+                        <hr>
+                        <img class="stim" src="images/stars4.jpg">
+                        <a class="leftinf" href="#">(11) See all</a>
+                        <hr>
+                        <img class="stim" src="images/stars3.jpg">
+                        <a class="leftinf" href="#">(3) See all</a>
+                        <hr>
+                        <img class="stim" src="images/stars2.jpg">
+                        <a class="leftinf" href="#">(4) See all</a>
+                        <hr>
+                        <img class="stim" src="images/stars1.jpg">
+                        <a class="leftinf" href="#">(1) See all</a>
+                    </div>
+                    <div id="revcoms">
+                        <h5>User: Garbeus Meade</h2>
+                        <p>I found this place....</p>
+                        <img class="stim1" src="images/stars4.jpg">
+                        <a class="rm" href="#">read more</a>
+                            <hr class="hor">
+                        <h5>User: Bologne Theroach</h2>
+                        <p>Terrible palce to....</p>
+                        <img class="stim1" src="images/stars1.jpg">
+                        <a class="rm" href="#">read more</a>
+                        <hr class="hor">
+
+                        <h5>User: Nimrod Fishfinger</h2>
+                        <p>Not my proudest....</p>
+                        <img class="stim1" src="images/stars3.jpg">
+                        <a class="rm" href="#">read more</a>
+                            <hr class="hor">
+                        <h5>User: Horsey Chobonso</h2>
+                        <p>It's alright although....</p>
+                        <img class="stim1" src="images/stars4.jpg">
+                        <a class="rm" href="#">read more</a>
+                        
+                    </div>
+                  
+                    
+                    
+                </div>
+                <div id="botbut">
+                    <button id="bz1">Back to Map</button>
+                    <button id="bz1">Write a Review</button>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
