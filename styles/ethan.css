@@ -9,24 +9,44 @@
     margin:10%;
 }
 
-#butzone{
+
+
+.bz {
+    display: inline;
+    
+ 
+    
+}
+
+.buttzone{
     text-align:center;
+    margin-top:-6%;
 }
 
-.bz{
-    margin-right:5%;
-    margin-left:5%;
-    padding:4%;
-    background-color: #446672;
-    border-radius: 10px;
-    border:solid white;
-    box-sizing: border-box;
-    color:white;
+.bz {
+    justify-content: center;
+    display:inline-flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    margin-left:2%;
+    margin-right:2%;
+    border-radius: 12px;
+    text-decoration: none;
+    width:90px;
+    height:80px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#bz:active {
-    transform: scale(0.98);
+.bz:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
 }
+
+
+
 
 /* REVIEW CSS */
 
@@ -102,27 +122,35 @@ hr{
     text-align:center;
     display:flex;
     justify-content: space-evenly;
+    
     padding:22%;
     margin-left:-15%;
     margin-right:-15%;
     overflow-x:hidden;
+    
 }
 
-#bz1{
-   
-    padding:10%;
-    background-color: #446672;
-    border-radius: 10px;
-    border:solid white;
-    box-sizing: border-box;
-    color:white;
-    overflow-y:hidden;
+.bz1 {
+    justify-content: center;
+    display:inline-flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    margin-left:2%;
+    margin-right:2%;
+    border-radius: 12px;
+    text-decoration: none;
+    width:100px;
+    height:90px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#bz1:active {
-    transform: scale(0.98);
+.bz1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
 }
-
 
 /* PAYMENT */
 
