@@ -13,7 +13,7 @@
     text-align:center;
 }
 
-#bz{
+.bz{
     margin-right:5%;
     margin-left:5%;
     padding:4%;
@@ -105,6 +105,7 @@ hr{
     padding:22%;
     margin-left:-15%;
     margin-right:-15%;
+    overflow-x:hidden;
 }
 
 #bz1{
@@ -115,6 +116,7 @@ hr{
     border:solid white;
     box-sizing: border-box;
     color:white;
+    overflow-y:hidden;
 }
 
 #bz1:active {
@@ -126,8 +128,25 @@ hr{
 
 #pim{
     width:80%;
+    margin-left:8%
 }
 
 #central{
-    text-align:center;
+    margin:5%
 }
+
+#content1 {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    overflow:hidden;
+}
+
+#cardnum {
+    padding-left:120px;
+}
+
+#cardname{
+    padding-left:120px;
+}
+
