@@ -83,6 +83,7 @@
 
 .rm{
     float:right;
+    margin-top:3%;
     margin-right:5%
 }
 a{
@@ -119,7 +120,7 @@ hr{
 
 .leftinf{
     float:left;
-    margin-left:5%
+   
 }
 
 #botbut{
