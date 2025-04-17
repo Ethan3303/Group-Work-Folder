@@ -1,27 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- Script will load boilerplate of the phone prototype so that we do not have to worry about changes being synced and such -->
-    <script>
-        const thisTitle = "account"; // Change this to the current page title
-        fetch("phone.html").then(response => response.text()).then(data => {
-            const contentToAdd = document.getElementById("content-container");
-            document.documentElement.innerHTML = data;
-            const nav = document.getElementById(`nav-${thisTitle}`);
-            if (nav) {
-                nav.classList.add("active");
-            }
-            const content = document.getElementById("content");
-            content.innerHTML = contentToAdd.innerHTML;
-            const script = document.createElement("script");
-            script.src = "index.js";
-            document.body.appendChild(script);
-        });
-    </script>
-</head>
 <body>
     <div id="content-container">
-        <div id="content" class="notifications-content">
+        <div class="notifications-content">
             <div class="notification">
                 <div class="notification-icon"><i class="fas fa-bell"></i></div>
                 <div class="notification-details">

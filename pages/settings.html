@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="content-container">
+        <div class="sub-title">Settings</div>
+        
+        <div class="settings-section">
+            <div class="setting-item">
+                <label for="textSizeSlider">Text Size</label>
+                <div class="slider-container">
+                    <span class="slider-label">A</span>
+                    <input type="range" min="80" max="120" value="100" step="5" class="slider" id="textSizeSlider">
+                    <span class="slider-label">A+</span>
+                </div>
+                <div class="size-value"><span id="textSizeValue">100%</span></div>
+            </div>
+            
+            <div class="setting-item">
+                <label for="darkModeToggle">Dark Mode</label>
+                <label class="toggle">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+            
+            <div class="setting-item">
+                <label for="textToSpeechToggle">Text to Speech</label>
+                <label class="toggle">
+                    <input type="checkbox" id="textToSpeechToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+        </div>
+        
+        <div class="settings-section">
+            <div class="setting-item logout-container">
+                <button id="logout-button">Log Out</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

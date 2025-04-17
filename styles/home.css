@@ -32,15 +32,16 @@
 .menu-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    cursor: pointer;
 }
 
 .menu-button i {
-    font-size: 24px;
+    font-size: calc(24px * var(--text-size-factor));
     margin-bottom: 10px;
 }
 
 .menu-button span {
-    font-size: 14px;
+    font-size: calc(14px * var(--text-size-factor));
     font-weight: 500;
 }
 
@@ -61,11 +62,11 @@
 .app-description h3 {
     margin-bottom: 10px;
     color: #2D3748;
-    font-size: 18px;
+    font-size: calc(18px * var(--text-size-factor));
 }
 
 .app-description p {
     color: #718096;
-    font-size: 14px;
+    font-size: calc(14px * var(--text-size-factor));
     line-height: 1.5;
 }

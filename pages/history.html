@@ -1,24 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- Script will load boilerplate of the phone prototype so that we do not have to worry about changes being synced and such -->
-    <script>
-        const thisTitle = "history"; // Change this to the current page title
-        fetch("phone.html").then(response => response.text()).then(data => {
-            const contentToAdd = document.getElementById("content-container");
-            document.documentElement.innerHTML = data;
-            const nav = document.getElementById(`nav-${thisTitle}`);
-            if (nav) {
-                nav.classList.add("active");
-            }
-            const content = document.getElementById("content");
-            content.innerHTML = contentToAdd.innerHTML;
-            const script = document.createElement("script");
-            script.src = "index.js";
-            document.body.appendChild(script);
-        });
-    </script>
-</head>
 <body>
     <div id="content-container" class="history-content">
         <div class="history-entry">
@@ -28,7 +9,7 @@
                 <span>£4.50 • Reserved</span>
             </div>
             <div class="entry-actions">
-                <button onclick="location.href='invoice.html?id=1'">View</button>
+                <button onclick="loadPage('invoice', {id: 1})">View</button>
                 <button onclick="sendInvoiceEmail(1)">Email</button>
             </div>
         </div>
@@ -40,7 +21,7 @@
                 <span>£3.00 • Instant</span>
             </div>
             <div class="entry-actions">
-                <button onclick="location.href='invoice.html?id=2'">View</button>
+                <button onclick="loadPage('invoice', {id: 2})">View</button>
                 <button onclick="sendInvoiceEmail(2)">Email</button>
             </div>
         </div>
@@ -52,7 +33,7 @@
                 <span>£5.20 • Reserved</span>
             </div>
             <div class="entry-actions">
-                <button onclick="location.href='invoice.html?id=3'">View</button>
+                <button onclick="loadPage('invoice', {id: 3})">View</button>
                 <button onclick="sendInvoiceEmail(3)">Email</button>
             </div>
         </div>
@@ -64,7 +45,7 @@
                 <span>£4.00 • Instant</span>
             </div>
             <div class="entry-actions">
-                <button onclick="location.href='invoice.html?id=4'">View</button>
+                <button onclick="loadPage('invoice', {id: 4})">View</button>
                 <button onclick="sendInvoiceEmail(4)">Email</button>
             </div>
         </div>
@@ -76,7 +57,7 @@
                 <span>£6.00 • Reserved</span>
             </div>
             <div class="entry-actions">
-                <button onclick="location.href='invoice.html?id=5'">View</button>
+                <button onclick="loadPage('invoice', {id: 5})">View</button>
                 <button onclick="sendInvoiceEmail(5)">Email</button>
             </div>
         </div>
@@ -88,7 +69,7 @@
                 <span>£3.80 • Instant</span>
             </div>
             <div class="entry-actions">
-                <button onclick="location.href='invoice.html?id=6'">View</button>
+                <button onclick="loadPage('invoice', {id: 6})">View</button>
                 <button onclick="sendInvoiceEmail(6)">Email</button>
             </div>
         </div>
@@ -100,7 +81,7 @@
                 <span>£4.75 • Reserved</span>
             </div>
             <div class="entry-actions">
-                <button onclick="location.href='invoice.html?id=7'">View</button>
+                <button onclick="loadPage('invoice', {id: 7})">View</button>
                 <button onclick="sendInvoiceEmail(7)">Email</button>
             </div>
         </div>
@@ -112,7 +93,7 @@
                 <span>£5.00 • Instant</span>
             </div>
             <div class="entry-actions">
-                <button onclick="location.href='invoice.html?id=8'">View</button>
+                <button onclick="loadPage('invoice', {id: 8})">View</button>
                 <button onclick="sendInvoiceEmail(8)">Email</button>
             </div>
         </div>
@@ -124,7 +105,7 @@
                 <span>£3.50 • Reserved</span>
             </div>
             <div class="entry-actions">
-                <button onclick="location.href='invoice.html?id=9'">View</button>
+                <button onclick="loadPage('invoice', {id: 9})">View</button>
                 <button onclick="sendInvoiceEmail(9)">Email</button>
             </div>
         </div>
@@ -136,7 +117,7 @@
                 <span>£6.20 • Instant</span>
             </div>
             <div class="entry-actions">
-                <button onclick="location.href='invoice.html?id=10'">View</button>
+                <button onclick="loadPage('invoice', {id: 10})">View</button>
                 <button onclick="sendInvoiceEmail(10)">Email</button>
             </div>
         </div>

@@ -1,31 +1,65 @@
+// Main phone functionality, handles page loading and navigation
+// Make another file for page specific functionality, don't put it here
+
 function getCurrentPage() {
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get("page") || "";
+    return [urlParams.get("page") || "sign-in", urlParams.delete("page")];
 }
 
-function loadPage(page) {
-    fetch(`pages/${page}.html`).then(response => response.text()).then(data => {
+function loadPage(page, extraParams = {}) {
+
+    const content = document.getElementById("content");
+    if (content.scrollTop > 0) {
+        extraParams.scrollTop = content.scrollTop;
+    }
+
+    fetch(`pages/${page}.html`)
+    .then(response => {
+        if (!response.ok) {
+            return fetch("pages/404.html").then(res => res.text());
+        }
+        return response.text();
+    })
+    .then(data => {
         const parser = new DOMParser();
         const doc = parser.parseFromString(data, "text/html");
         const contentToAdd = doc.getElementById("content-container");
+
+        const navbar = document.getElementsByClassName("nav-bar");
+        if (navbar && navbar[0]) {
+            navbar[0].style.display = page === "home" ? "none" : "flex";
+        }
+
+        const allNavs = document.getElementsByClassName("nav-item");
+        for (const nav of allNavs) {
+            nav.classList.remove("active");
+        }
+
+        const nav = document.getElementById(`nav-${page}`);
+        if (nav) {
+            nav.classList.add("active");
+        }
+
+        content.innerHTML = contentToAdd.innerHTML;
+        document.getElementById("page-title").innerText = page.charAt(0).toUpperCase() + page.slice(1).replace(/-/g, " ");
+
+        const currentParams = new URLSearchParams(window.location.search);
+        if (currentParams.has("scrollTop")) {
+            content.scrollTop = parseInt(currentParams.get("scrollTop"));
+        }
+
+        const params = new URLSearchParams(extraParams).toString();
+        window.history.replaceState({ page: page }, "", `?page=${page}&${params}`);
+
+        loadSettings();
         switch (page) {
-            case "home":
-                const navbar = document.getElementsByClassName("nav-bar")
-                if (navbar && navbar[0]) {
-                    navbar[0].style.display = "none";
-                }
+            case "invoice":
+                loadInvoiceData(extraParams.id);
                 break;
-            default:
-                console.log("Loading page: " + page);
-                const nav = document.getElementById(`nav-${page}`);
-                if (nav) {
-                    nav.classList.add("active");
-                }
+            case "settings":
+                initializeSettings();
                 break;
         }
-        const content = document.getElementById("content");
-        content.innerHTML = contentToAdd ? contentToAdd.innerHTML : "";
-        window.history.pushState({ page: page }, "", `?page=${page}`);
     });
 }
 
@@ -34,8 +68,8 @@ function changeTime() {
     document.getElementById("time").innerHTML = currentTime;
 }
 document.addEventListener("DOMContentLoaded", () => {
-    const currentPage = getCurrentPage();
-    loadPage(currentPage || "home");
+    const [currentPage, extra] = getCurrentPage();
+    loadPage(currentPage, extra);
     setInterval(changeTime, 10000);
     changeTime();
 });

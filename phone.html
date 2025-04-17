@@ -1,15 +1,27 @@
+<!-- This is the skeleton and main file for the entire phone only change to import new scripts and styles -->
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Parkly</title>
-        <link rel="icon" type="image/png" href="/images/thumbnail.png">
+        <link rel="icon" type="image/png" href="images/parkly-trans.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/history.css">
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/invoice.css">
+        <link rel="stylesheet" href="styles/notifications.css">
+        <link rel="stylesheet" href="styles/settings.css">
+        <link rel="stylesheet" href="styles/ethan.css">
+        
+        <!-- JS -->
         <script src="scripts/index.js"></script>
         <script src="scripts/settings.js"></script>
+        <script src="scripts/invoice.js"></script>
     </head>
     <body>
         <div id="phone">
@@ -21,21 +33,21 @@
                     <i class="fas fa-battery-full"></i>
                 </div>
             </div>
-            <div id="page-title">
+            <div id="page-header">
                 <div class="top-left">
-                    <span class="settings-icon" onmouseenter="toggleSettingsDropdown(true)" onmouseleave="toggleSettingsDropdown(false)">
+                    <span class="settings-icon" onmouseenter="toggleSettingsDropdown(true)" onmouseleave="toggleSettingsDropdown(false)" onclick="toggleSettingsDropdown(false, true)">
                         <i class="fas fa-cog"></i>
                     </span>
-                    <div class="dropdown-content" id="settingsDropdown" onmouseleave="toggleSettingsDropdown(false)">
-                        <a href="./settings.html">Settings</a>
-                        <a href="./help.html">Help & FAQ</a>
+                    <div class="dropdown-content" id="settingsDropdown" onmouseleave="toggleSettingsDropdown(false)" onclick="toggleSettingsDropdown(false, true)">
+                        <a href="#" onclick="loadPage('settings')">Settings</a>
+                        <a href="#" onclick="loadPage('help')">Help & FAQ</a>
                     </div>
                 </div>
             
-                <div class="logo">Parkly</div>
+                <div id="page-title">Parkly</div>
             
                 <div class="top-right">
-                    <span class="notifications-icon" onclick="location.href='./notification.html'">
+                    <span class="notifications-icon" onclick="loadPage('notifications')">
                         <i class="fas fa-bell"></i>
                     </span>
                 </div>

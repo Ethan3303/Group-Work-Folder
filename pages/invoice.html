@@ -1,25 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- Script will load boilerplate of the phone prototype so that we do not have to worry about changes being synced and such -->
-    <script>
-        const thisTitle = "history"; // Change this to the current page title
-        fetch("phone.html").then(response => response.text()).then(data => {
-            const contentToAdd = document.getElementById("content-container");
-            document.documentElement.innerHTML = data;
-            const nav = document.getElementById(`nav-${thisTitle}`);
-            if (nav) {
-                nav.classList.add("active");
-            }
-            const content = document.getElementById("content");
-            content.innerHTML = contentToAdd.innerHTML;
-            const script = document.createElement("script");
-            script.src = "index.js";
-            document.body.appendChild(script);
-        });
-    </script>
-</head>
-<body>
+    <body>
     <div id="content-container">
         <div class="invoice-wrapper">
             <div class="invoice-card">
@@ -58,97 +39,10 @@
                 <div class="invoice-total">Total Paid: £4.50</div>
             </div>
 
-            <div class="back-btn">
-                <button onclick="history.back()">Back to History</button>
+            <div class="back-history-btn">
+                <button onclick="loadPage('history')">Back to History</button>
             </div>
         </div>
     </div>
-    <script>
-        const invoiceData = {
-        1: {
-            location: "Trinity Leeds Car Park",
-            datetime: "07 Mar 2025, 6:20 PM",
-            type: "Reserved",
-            duration: "2 hours",
-            price: "£4.50"
-        },
-        2: {
-            location: "Leeds Dock Parking",
-            datetime: "06 Mar 2025, 12:00 PM",
-            type: "Instant",
-            duration: "1 hour",
-            price: "£3.00"
-        },
-        3: {
-            location: "Woodhouse Lane Car Park",
-            datetime: "05 Mar 2025, 7:45 PM",
-            type: "Reserved",
-            duration: "3 hours",
-            price: "£5.20"
-        },
-        4: {
-            location: "Q-Park Albion Street",
-            datetime: "04 Mar 2025, 10:30 AM",
-            type: "Instant",
-            duration: "1 hour",
-            price: "£4.00"
-        },
-        5: {
-            location: "Wellington Place Parking",
-            datetime: "03 Mar 2025, 2:00 PM",
-            type: "Reserved",
-            duration: "2 hours",
-            price: "£6.00"
-        },
-        6: {
-            location: "Leeds Station Short Stay",
-            datetime: "02 Mar 2025, 4:10 PM",
-            type: "Instant",
-            duration: "1 hour",
-            price: "£3.80"
-        },
-        7: {
-            location: "Merrion Centre Parking",
-            datetime: "01 Mar 2025, 9:50 AM",
-            type: "Reserved",
-            duration: "2 hours",
-            price: "£4.75"
-        },
-        8: {
-            location: "The Light Parking",
-            datetime: "29 Feb 2025, 8:30 PM",
-            type: "Instant",
-            duration: "1.5 hours",
-            price: "£5.00"
-        },
-        9: {
-            location: "Granary Wharf Car Park",
-            datetime: "28 Feb 2025, 11:15 AM",
-            type: "Reserved",
-            duration: "2 hours",
-            price: "£3.50"
-        },
-        10: {
-            location: "Victoria Leeds Parking",
-            datetime: "27 Feb 2025, 1:00 PM",
-            type: "Instant",
-            duration: "2 hours",
-            price: "£6.20"
-        }
-    };
-
-        const params = new URLSearchParams(window.location.search);
-        const id = params.get("id") || "1";
-
-        const data = invoiceData[id] || invoiceData[1];
-
-        document.getElementById("invoice-id").textContent = "#" + id;
-        document.getElementById("location").textContent = data.location;
-        document.getElementById("datetime").textContent = data.datetime;
-        document.getElementById("type").textContent = data.type;
-        document.getElementById("duration").textContent = data.duration;
-        document.getElementById("price").textContent = data.price;
-        document.querySelector(".invoice-total").textContent = "Total Paid: " + data.price;
-    </script>
 </body>
 </html>

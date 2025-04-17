@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="content-container">
+        <div id="subheading">
+            <h2>Welcome to Parkly!</h2>
+            <h4>Please create an account.</h4>
+        </div>
+        <div id="form">
+            <div class="sign-in-form">
+                <form action="/signIn.html">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="John" required>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Doe" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@examp.com" required>
+                    <label for="phnumber">Phone Number:</label>
+                    <input type="number" id="phnumber" name="phnumber" placeholder="12345 678990">
+                    <label for="pic">Profile Pic:</label>
+                    <input type="file" id="pic" name="pic">
+                    <label for="password1">Password:</label>
+                    <input type="password" id="password1" name="password1" maxlength="8" required>
+                    <label for="password2">Repeat Password:</label>
+                    <input type="password" id="password2" name="password2" maxlength="8" required>
+                    <label for="licence">Licence plate:</label>
+                    <input type="text" id="lplate" name="lplate" required>
+                    <button type="submit"><a href="./home.html"></a> Sign Up</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div id="Guest">
+            <p>Already have an account? <a href="./signIn.html">Sign in</a></p>
+            <p>Sign in as guest? <a href="./home.html">Guest</a></p>
+        </div>
+    </div>
+</body>
+</html>
