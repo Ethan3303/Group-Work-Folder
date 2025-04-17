@@ -1,0 +1,188 @@
+/* ACCOUNT CSS */
+#pfpim{
+    width:50%;
+    border:3px solid #446672;
+    
+}
+
+.acccon{
+    margin:10%;
+}
+
+
+
+.bz {
+    display: inline;
+    
+ 
+    
+}
+
+.buttzone{
+    text-align:center;
+    margin-top:-6%;
+}
+
+.bz {
+    justify-content: center;
+    display:inline-flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding:20px;
+    margin-left:2%;
+    margin-right:2%;
+    border-radius: 12px;
+    text-decoration: none;
+    width:90px;
+    height:80px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bz:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+
+
+
+/* REVIEW CSS */
+
+#star1{
+    color: #446672;
+}
+
+#deets{
+    
+    margin:3%
+}
+
+#revstar{
+    border:3px solid #446672;
+    
+    width:40%;
+    float:left;
+    margin-bottom:1%;
+    padding:2%;
+      
+}
+
+#revstarinf{
+    border:3px solid #446672;
+    
+    width:40%;
+    float:left;
+    margin-bottom:1%;
+    padding:2%;
+      
+}
+
+
+.rm{
+    float:right;
+    margin-top:3%;
+    margin-right:5%
+}
+a{
+    font-size:60%
+    
+}
+hr{
+    margin-top:15%;
+    margin-bottom:10%;
+}
+.hor{
+    margin-top:3%;
+    margin-bottom:7%;
+}
+
+#revcoms{
+    border:3px solid #446672;
+    height:30%;
+    width:58%;
+    float: right;
+    margin-bottom:1%;
+    padding:2%;
+    
+
+}
+
+.stim{
+    width:100%;
+}
+
+.stim1{
+    width:50%;
+}
+
+.leftinf{
+    float:left;
+   
+}
+
+#botbut{
+    
+    text-align:center;
+    display:flex;
+    justify-content: space-evenly;
+    
+    padding:22%;
+    margin-left:-15%;
+    margin-right:-15%;
+    overflow-x:hidden;
+    
+}
+
+.bz1 {
+    justify-content: center;
+    display:inline-flex;
+    align-items: center;
+    margin-bottom:5%;
+    background-color: var(--primary-color);
+    color: white;
+    margin-left:2%;
+    margin-right:2%;
+    border-radius: 12px;
+    text-decoration: none;
+    padding:20px;
+    width:100px;
+    height:90px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bz1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+/* PAYMENT */
+
+#pim{
+    width:80%;
+    margin-left:8%
+}
+
+#central{
+    margin:5%
+}
+
+#content1 {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    overflow:hidden;
+}
+
+#cardnum {
+    padding-left:120px;
+}
+
+#cardname{
+    padding-left:120px;
+}
+

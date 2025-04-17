@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Parkly - Notifications</title>
+    <link rel="icon" type="image/png" href="/images/thumbnail.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div id="phone">
+        <div id="notch">
+            <p id="time"></p>
+            <div class="status-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <div id="page-title">
+            <div class="top-left">
+                <span class="settings-icon" onmouseenter="toggleSettingsDropdown(true)" onmouseleave="toggleSettingsDropdown(false)">
+                    <i class="fas fa-cog"></i>
+                </span>
+                <div class="dropdown-content" id="settingsDropdown" onmouseleave="toggleSettingsDropdown(false)">
+                    <a href="./settings.html">Settings</a>
+                    <a href="./help.html">Help & FAQ</a>
+                </div>
+            </div>
+        
+            <div class="logo">Notifications</div>
+        
+            <div class="top-right">
+                <span class="notifications-icon" onclick="location.href='./notification.html'">
+                    <i class="fas fa-bell"></i>
+                </span>
+            </div>
+        </div>
+
+        <div id="content" class="notifications-content">
+            <div class="notification">
+                <div class="notification-icon"><i class="fas fa-bell"></i></div>
+                <div class="notification-details">
+                    <strong>Upcoming Reservation</strong>
+                    <p>Trinity Leeds Car Park at 6:20 PM today</p>
+                    <span class="timestamp">Today, 4:00 PM</span>
+                </div>
+            </div>
+
+            <div class="notification">
+                <div class="notification-icon"><i class="fas fa-exclamation-circle"></i></div>
+                <div class="notification-details">
+                    <strong>Meter Expiring Soon</strong>
+                    <p>Leeds Dock Parking expires in 15 minutes</p>
+                    <span class="timestamp">Today, 11:45 AM</span>
+                </div>
+            </div>
+
+            <div class="notification">
+                <div class="notification-icon"><i class="fas fa-receipt"></i></div>
+                <div class="notification-details">
+                    <strong>Invoice Ready</strong>
+                    <p>Your invoice for Q-Park Albion Street is now available</p>
+                    <span class="timestamp">Yesterday, 10:35 AM</span>
+                </div>
+            </div>
+
+            <div class="notification">
+                <div class="notification-icon"><i class="fas fa-calendar-check"></i></div>
+                <div class="notification-details">
+                    <strong>Booking Confirmed</strong>
+                    <p>Reservation at Woodhouse Lane Car Park confirmed</p>
+                    <span class="timestamp">2 days ago</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <a href="./home.html">
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-home"></i></div>
+                    <div>Home</div>
+                </div>
+            </a>
+            <a href="./book.html">
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-ticket-alt"></i></div>
+                    <div>Book</div>
+                </div>
+            </a>
+            <a href="./history.html">
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-receipt"></i></div>
+                    <div>History</div>
+                </div>
+            </a>
+            <a href="./account.html">
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-user"></i></div>
+                    <div>Account</div>
+                </div>
+            </a>
+        </div>
+    </div>

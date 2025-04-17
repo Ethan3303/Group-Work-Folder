@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Parkly</title>
+    <link rel="icon" type="image/png" href="/images/thumbnail.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/ethan.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div id="phone">
+        <div id="notch">
+            <p id="time"></p>
+            <div class="status-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+        <div id="page-title">
+            <div class="top-left">
+                <span class="settings-icon" onmouseenter="toggleSettingsDropdown(true)"
+                    onmouseleave="toggleSettingsDropdown(false)">
+                    <i class="fas fa-cog"></i>
+                </span>
+                <div class="dropdown-content" id="settingsDropdown" onmouseleave="toggleSettingsDropdown(false)">
+                    <a href="./settings.html">Settings</a>
+                    <a href="./help.html">Help & FAQ</a>
+                </div>
+            </div>
+
+            <div class="logo">Parkly</div>
+
+            <div class="top-right">
+                <span class="notifications-icon" onclick="location.href='./notification.html'">
+                    <i class="fas fa-bell"></i>
+                </span>
+            </div>
+        </div>
+        <div id="content1">
+            <div id="deets">
+                <h2>Reviews for Location:</h2>
+                <p>Location Name Here</p>
+                <br>
+                <div id="revstar">
+                    <h4>rating</h4>
+                </div>
+                <div id="revcoms">
+                    <h4>reviews</h4>
+                </div>
+                <div id="revstarinf">
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-solid fa-star"></i>
+
+
+                    <a class="leftinf" href="#">(8) See all</a>
+                    <hr>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-regular fa-star"></i>
+
+                    <a class="leftinf" href="#">(11) See all</a>
+                    <hr>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-regular fa-star"></i>
+
+                    <i id="star1" class="fa-regular fa-star"></i>
+                    <a class="leftinf" href="#">(3) See all</a>
+                    <hr>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-regular fa-star"></i>
+                    <i id="star1" class="fa-regular fa-star"></i>
+
+                    <i id="star1" class="fa-regular fa-star"></i>
+                    <a class="leftinf" href="#">(4) See all</a>
+                    <hr>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    <i id="star1" class="fa-regular fa-star"></i>
+                    <i id="star1" class="fa-regular fa-star"></i>
+                    <i id="star1" class="fa-regular fa-star"></i>
+                    <i id="star1" class="fa-regular fa-star"></i>
+                    <a class="leftinf" href="#">(1) See all</a>
+                </div>
+                <div id="revcoms">
+                    <h5>User: Garbeus Meade</h2>
+                        <p>I found this place....</p>
+                        <i id="star1" class="fa-solid fa-star"></i>
+                        <i id="star1" class="fa-solid fa-star"></i>
+                        <i id="star1" class="fa-solid fa-star"></i>
+                        <i id="star1" class="fa-solid fa-star"></i>
+                        <i id="star1" class="fa-regular fa-star"></i>
+                        <a class="rm" href="#">read more</a>
+                        <hr class="hor">
+                        <h5>User: Bologne Theroach</h2>
+                            <p>Terrible palce to....</p>
+                            <i id="star1" class="fa-solid fa-star"></i>
+                            <i id="star1" class="fa-regular fa-star"></i>
+                            <i id="star1" class="fa-regular fa-star"></i>
+                            <i id="star1" class="fa-regular fa-star"></i>
+                            <i id="star1" class="fa-regular fa-star"></i>
+                            <a class="rm" href="#">read more</a>
+                            <hr class="hor">
+
+                            <h5>User: Nimrod Fishfinger</h2>
+                                <p>Not my proudest....</p>
+                                <i id="star1" class="fa-solid fa-star"></i>
+                                <i id="star1" class="fa-solid fa-star"></i>
+                                <i id="star1" class="fa-solid fa-star"></i>
+                                <i id="star1" class="fa-regular fa-star"></i>
+                                <i id="star1" class="fa-regular fa-star"></i>
+                                <a class="rm" href="#">read more</a>
+                                <hr class="hor">
+                                <h5>User: Horsey Chobonso</h2>
+                                    <p>It's alright although....</p>
+                                    <i id="star1" class="fa-solid fa-star"></i>
+                                    <i id="star1" class="fa-solid fa-star"></i>
+                                    <i id="star1" class="fa-solid fa-star"></i>
+                                    <i id="star1" class="fa-solid fa-star"></i>
+                                    <i id="star1" class="fa-regular fa-star"></i>
+                                    <a class="rm" href="#">read more</a>
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="buttzone">
+            <span class="bz1" onclick="location.href='#'">Back to Map</span>
+
+            <span class="bz1">Write a Review</span>
+        </div>
+
+
+        <div class="nav-bar">
+            <a href="./home.html">
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-home"></i></div>
+                    <div>Home</div>
+                </div>
+            </a>
+            <a href="./book.html">
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-ticket-alt"></i></div>
+                    <div>Book</div>
+                </div>
+            </a>
+            <a href="./history.html">
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-receipt"></i></div>
+                    <div>History</div>
+                </div>
+            </a>
+            <a href="./account.html">
+                <div class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-user"></i></div>
+                    <div>Account</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
