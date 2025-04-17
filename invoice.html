@@ -21,11 +21,23 @@
             </div>
         </div>
         <div id="page-title">
-            <span class="back-button" onclick="history.back();">
-                <i class="fas fa-chevron-left"></i>
-            </span>
-            Invoice
-            <i class="app-icon"></i>
+            <div class="top-left">
+                <span class="settings-icon" onmouseenter="toggleSettingsDropdown(true)" onmouseleave="toggleSettingsDropdown(false)">
+                    <i class="fas fa-cog"></i>
+                </span>
+                <div class="dropdown-content" id="settingsDropdown" onmouseleave="toggleSettingsDropdown(false)">
+                    <a href="./settings.html">Settings</a>
+                    <a href="./help.html">Help & FAQ</a>
+                </div>
+            </div>
+        
+            <div class="logo">Invoice</div>
+        
+            <div class="top-right">
+                <span class="notifications-icon" onclick="location.href='./notification.html'">
+                    <i class="fas fa-bell"></i>
+                </span>
+            </div>
         </div>
 
         <div class="invoice-wrapper">
