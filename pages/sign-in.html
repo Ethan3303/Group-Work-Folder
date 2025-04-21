@@ -6,18 +6,14 @@
             <h2>Welcome back!</h2>
             <h4>Please sign in to your account.</h4>
         </div>
-        <div id="form">
-            <div class="sign-in-form">
-                <form action="/home.html">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                    <button type="submit">Sign In</button>
-                </form>
-
-            </div>
-
+        <div class="sign-in-form">
+            <form onsubmit="loadPage('home')">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Sign In</button>
+            </form>
         </div>
         <div id="google-sign-in">
             <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=175&id=264960&wreply=https%3a%2f%2fwww.bing.com%2fsecure%2fPassport.aspx%3fedge_suppress_profile_switch%3d1%26requrl%3dhttps%253a%252f%252fwww.bing.com%252fsearch%253fq%253dhtml%252520image%252520as%252520link%252520to%252520google%252520sign%252520in%2526qs%253dn%2526form%253dQBRE%2526sp%253d-1%2526ghc%253d1%2526lq%253d0%2526pq%253dhtml%252520image%252520as%252520link%252520to%252520google%252520sign%252520in%2526sc%253d9-36%2526sk%253d%2526cvid%253dA9D67E6A2AE64E6B9D536CBA51E0EBF1%2526wlsso%253d1%2526wlexpsignin%253d1%26sig%3d2CF6E85A63C1681C186EFD8A626D6977%26nopa%3d2&wp=MBI_SSL&lc=2057&CSRFToken=0439d91e-7acb-4972-a4dc-0826fff7248b&cobrandid=c333cba8-c15c-4458-b082-7c8ce81bee85&nopa=2">
@@ -26,9 +22,9 @@
                 <!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
             </a>
         </div>
-        <div id="footer">
-            <p>Forgot your password? <a href="./ForgottenPas.html">Reset it</a></p>
-            <p>Don't have an account? <a href="./signUp.html">Sign Up</a></p>
+        <div id="sign-in-footer">
+            <p>Forgot your password? <a href="#" onclick="loadPage('forgot-password')">Reset it</a></p>
+            <p>Don't have an account? <a href="#" onclick="loadPage('sign-up')">Sign Up</a></p>
         </div>
     </div>
 </body>

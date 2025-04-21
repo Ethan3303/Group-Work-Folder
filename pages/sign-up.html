@@ -8,7 +8,7 @@
         </div>
         <div id="form">
             <div class="sign-in-form">
-                <form action="/signIn.html">
+                <form onsubmit="loadPage('sign-in')">
                     <label for="fname">First Name:</label>
                     <input type="text" id="fname" name="fname" placeholder="John" required>
                     <label for="lname">Last Name:</label>
@@ -32,8 +32,8 @@
         </div>
 
         <div id="Guest">
-            <p>Already have an account? <a href="./signIn.html">Sign in</a></p>
-            <p>Sign in as guest? <a href="./home.html">Guest</a></p>
+            <p>Already have an account? <a href="#" onclick="loadPage('sign-in')">Sign in</a></p>
+            <p>Sign in as guest? <a href="#" onclick="loadPage('home')">Guest</a></p>
         </div>
     </div>
 </body>
