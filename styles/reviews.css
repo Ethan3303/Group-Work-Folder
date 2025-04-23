@@ -1,11 +1,10 @@
 #reviews h2 {
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: calc(24px * var(--text-size-factor));
     margin-bottom: 8px;
 }
 
 .location-name {
-    font-size: 1.1rem;
     font-weight: 500;
     color: var(--sub-text-color);
     margin-bottom: 20px;
@@ -25,7 +24,6 @@
 }
 
 .stat-box h4 {
-    font-size: 1rem;
     margin-bottom: 10px;
     color: var(--primary-color);
 }
@@ -38,13 +36,13 @@
 }
 
 .rating-number {
-    font-size: 2rem;
+    font-size: calc(24px * var(--text-size-factor));
     font-weight: bold;
     color: var(--black);
 }
 
 .rating-count {
-    font-size: 0.8rem;
+    font-size: calc(14px * var(--text-size-factor));
     color: var(--sub-text-color);
 }
 
@@ -58,16 +56,12 @@
     gap: 2px;
 }
 
-.stars-display.small {
-    font-size: 0.9rem;
-}
-
 .fas.fa-star {
-    color: gold;
+    color: var(--primary-color);
 }
 
 .fas.fa-star-half-alt {
-    color: gold;
+    color: var(--primary-color);
 }
 
 .far.fa-star {
@@ -98,7 +92,6 @@
 
 .leftinf {
     color: var(--primary-color);
-    font-size: 0.9rem;
 }
 
 .review-list {
@@ -110,7 +103,6 @@
 }
 
 .user-name {
-    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 5px;
     color: var(--black);
@@ -118,7 +110,7 @@
 
 .review-text {
     color: var(--sub-text-color);
-    font-size: 0.9rem;
+    font-size: calc(14px * var(--text-size-factor));
     margin-bottom: 10px;
 }
 
@@ -130,7 +122,7 @@
 
 .rm {
     color: var(--primary-color);
-    font-size: 0.8rem;
+    font-size: calc(12px * var(--text-size-factor));
 }
 
 

@@ -5,7 +5,7 @@
 }
 
 #payment-form h2 {
-    font-size: 1.5rem;
+    font-size: calc(24px * var(--text-size-factor));
     margin-bottom: 20px;
     color: var(--primary-color);
     text-align: center;
@@ -40,12 +40,12 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 0.9rem;
+    font-size: calc(14px * var(--text-size-factor));
     cursor: pointer;
 }
 
 .payment-option i {
-    font-size: 1.2rem;
+    font-size: calc(14px * var(--text-size-factor));
 }
 
 .fab.fa-paypal { color: #003087; }
@@ -81,7 +81,7 @@
     border-radius: 6px;
     background-color: var(--white);
     color: var(--black);
-    font-size: 0.9rem;
+    font-size: calc(14px * var(--text-size-factor));
 }
 
 input:focus {

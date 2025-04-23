@@ -49,11 +49,11 @@
 
 .app-description {
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: var(--white);
     border-radius: 12px;
     margin: 40px 15px 20px;
     text-align: center;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--shadow-color);
     position: absolute;
     bottom: 20px;
     left: 15px;
@@ -62,12 +62,12 @@
 
 .app-description h3 {
     margin-bottom: 10px;
-    color: #2D3748;
+    color: var(--black);
     font-size: calc(18px * var(--text-size-factor));
 }
 
 .app-description p {
-    color: #718096;
+    color: var(--sub-text-color);
     font-size: calc(14px * var(--text-size-factor));
     line-height: 1.5;
 }
