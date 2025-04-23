@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="content-container">
+        <div class="auth-form">
+            <div id="subheading">
+                <h2>Welcome!</h2>
+                <h4>Please sign in to your account.</h4>
+            </div>
+            <div class="sign-in-form">
+                <form onsubmit="loadPage('home'); return false;">
+                    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password"><i class="fas fa-lock"></i> Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Sign In <i class="fas fa-sign-in-alt"></i></button>
+                </form>
+            </div>
+            
+            <div class="divider">
+                <span class="divider-text">OR</span>
+            </div>
+            <div class="social-sign-in">
+                <button class="social-button" onclick="loadPage('home')">
+                <i class="fab fa-google" style="color: #4285F4;"></i> Sign in with Google
+                </button>
+            </div>
+            <div class="social-sign-in">
+                <button class="social-button" onclick="loadPage('home')">
+                <i class="fas fa-user" style="color: #555;"></i> Sign in as Guest
+                </button>
+            </div>
+            
+            <div class="auth-footer">
+                <p>Forgot your password? <a href="#" onclick="loadPage('forgot-password')">Reset it</a></p>
+                <p>Don't have an account? <a href="#" onclick="loadPage('sign-up')">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

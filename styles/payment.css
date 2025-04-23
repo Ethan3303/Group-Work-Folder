@@ -1,0 +1,139 @@
+#payment-form {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#payment-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--nav-above-color);
+    transition: all 0.2s ease;
+}
+
+.payment-option:hover {
+    background-color: var(--hover-white);
+    transform: translateY(-2px);
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 8px;
+}
+
+.payment-option label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.payment-option i {
+    font-size: 1.2rem;
+}
+
+.fab.fa-paypal { color: #003087; }
+.fab.fa-cc-mastercard { color: #eb001b; }
+.fab.fa-cc-visa { color: #1a1f71; }
+.fab.fa-cc-amex { color: #4285f4; }
+.fab.fa-apple-pay { color: #000000; }
+.fab.fa-amazon-pay { color: #ff9900; }
+.fab.fa-google-pay { color: #4285f4; }
+.fab.fa-stripe { color: #6772e5; }
+
+.card-details {
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group.half {
+    flex: 1;
+}
+
+#payment-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--nav-above-color);
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 0.9rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--sub-text-color);
+}
+
+.butzone {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color-hover);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--nav-above-color);
+    color: var(--black);
+}
+
+.btn-secondary:hover {
+    background-color: var(--hover-white);
+    transform: translateY(-2px);
+}
