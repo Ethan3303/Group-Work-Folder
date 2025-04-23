@@ -5,14 +5,14 @@
 }
 
 #subheading h2 {
-    font-size: 24px;
+    font-size: calc(24px * var(--text-size-factor));
     margin: 12px;
 }
 
 #subheading h4, #subheading h5 {
     font-weight: 400;
     color: var(--sub-text-color);
-    font-size: 16px;
+    font-size: var(--text-size-factor);
     line-height: 1.5;
 }
 
@@ -45,7 +45,7 @@ input[type="number"] {
     border: 1px solid var(--shadow-color);
     background-color: var(--white);
     border-radius: 6px;
-    font-size: 16px;
+    font-size: var(--text-size-factor);
     transition: border 0.3s;
 }
 
@@ -100,7 +100,7 @@ button:active {
     color: #444;
     border: 1px solid #ddd;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: var(--text-size-factor);
     font-weight: 500;
     cursor: pointer;
     width: 100%;
@@ -119,7 +119,7 @@ button:active {
 
 .auth-footer {
     text-align: center;
-    font-size: 14px;
+    font-size: calc(14px * var(--text-size-factor));
     color: var(--sub-text-color);
     margin-top: 10px;
 }
