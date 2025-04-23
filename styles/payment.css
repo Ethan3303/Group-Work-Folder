@@ -4,13 +4,6 @@
     flex-direction: column;
 }
 
-#payment-form h2 {
-    font-size: calc(24px * var(--text-size-factor));
-    margin-bottom: 20px;
-    color: var(--primary-color);
-    text-align: center;
-}
-
 .payment-methods {
     display: grid;
     grid-template-columns: 1fr 1fr;

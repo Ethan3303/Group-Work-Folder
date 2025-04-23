@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <div id="content-container" style="display: none;">
-        <div class="sub-title">Book</div>
+    <div id="content-container">
+        <h2 class="sub-title">Booking Options</h2>
+        <div>
+            <i class="fas fa-search"></i>
+            <input type="text" id="search-bar" placeholder="Type to search...">
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1298.659958643193!2d-1.5468770637770446!3d53.79547735982032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48795c18dad858ed%3A0x6e30f6a04e0566dd!2sTrinity%20Leeds%20Car%20Park!5e0!3m2!1sen!2suk!4v1745419037792!5m2!1sen!2suk" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <p class="time-head">Time & Date</p>
+        <div class="date-selctor">
+            <div class="time">
+                <input type="time" id="start-time" name="start-time" value="09:00">
+            </div>
+            <div class="date">
+                <input type="date" id="start-date" name="start-date" value="2023-10-01">
+            </div>
+        </div>
+
+        <div class="butzone">
+            <button class="btn btn-primary">Use Previous Details</button>
+        </div>
     </div>
 </body>
 </html>

@@ -157,12 +157,12 @@ button:active {
     color: var(--sub-text-color);
 }
 
-#code {
+#reset-code {
     width: 100%;
     margin-top: 10px;
 }
 
-.code h4 {
+#reset-code h4 {
     text-align: center;
     margin-bottom: 16px;
     color: var(--primary-color);
