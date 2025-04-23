@@ -207,13 +207,11 @@ body {
 }
 
 .sub-title {
-    padding: 10px;
     font-size: calc(24px * var(--text-size-factor));
+    color: var(--primary-color);
+    text-align: center;
     font-weight: 600;
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .span-title {
@@ -222,6 +220,7 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 ::-webkit-scrollbar {

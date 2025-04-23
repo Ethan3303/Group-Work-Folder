@@ -70,6 +70,9 @@ function loadPage(page, extraParams = {}) {
             case "settings":
                 initializeSettings();
                 break;
+            case "forgot-password":
+                showCodeForm();
+                break;
         }
     });
 }
