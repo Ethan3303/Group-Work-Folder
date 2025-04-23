@@ -46,7 +46,7 @@
 
 
 .back-history-btn {
-    margin-top: 1%;
+    margin-top: auto;
     display: flex;
     justify-content: space-between;
     padding: 20px;
