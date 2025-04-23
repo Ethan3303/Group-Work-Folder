@@ -21,7 +21,6 @@
     font-weight: 500;
 }
 
-/* Slider styles */
 .slider-container {
     display: flex;
     align-items: center;
@@ -58,7 +57,6 @@
     font-weight: 500;
 }
 
-/* Toggle switch styles */
 .toggle {
     position: relative;
     display: inline-block;
@@ -104,7 +102,6 @@ input:checked + .toggle-slider:before {
     transform: translateX(26px);
 }
 
-/* Logout button styles */
 .logout-container {
     width: 100%;
     justify-content: center;

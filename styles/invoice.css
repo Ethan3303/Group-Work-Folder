@@ -45,11 +45,11 @@
 }
 
 
-/* Back to history button */
 .back-history-btn {
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .back-history-btn button {

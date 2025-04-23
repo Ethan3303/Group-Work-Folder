@@ -10,14 +10,28 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- Ben's CSS Styles -->
         <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/history.css">
         <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/settings.css">
+        <link rel="stylesheet" href="styles/help.css">
+        <link rel="stylesheet" href="styles/book.css">
+
+        <!-- Ethan's CSS Styles -->
+        <link rel="stylesheet" href="styles/account.css">
+        <link rel="stylesheet" href="styles/payment.css">
+        <link rel="stylesheet" href="styles/receipt.css">
+        <link rel="stylesheet" href="styles/reviews.css">
+
+        <!-- Samye's CSS Styles -->
+        <link rel="stylesheet" href="styles/auth-pages.css">
+
+        <!-- Fynn's CSS Styles -->
+        <link rel="stylesheet" href="styles/history.css">
         <link rel="stylesheet" href="styles/invoice.css">
         <link rel="stylesheet" href="styles/notifications.css">
-        <link rel="stylesheet" href="styles/settings.css">
-        <link rel="stylesheet" href="styles/sign-in.css">
-        
+
         <!-- JS -->
         <script src="scripts/index.js"></script>
         <script src="scripts/settings.js"></script>
@@ -35,19 +49,20 @@
             </div>
             <div id="page-header">
                 <div class="top-left">
-                    <span class="settings-icon" onmouseenter="toggleSettingsDropdown(true)" onmouseleave="toggleSettingsDropdown(false)" onclick="toggleSettingsDropdown(false, true)">
+                    <span id="settings-icon" onmouseenter="toggleSettingsDropdown(true)" onmouseleave="toggleSettingsDropdown(false)" onclick="toggleSettingsDropdown(false, true)">
                         <i class="fas fa-cog"></i>
                     </span>
                     <div class="dropdown-content" id="settingsDropdown" onmouseleave="toggleSettingsDropdown(false)" onclick="toggleSettingsDropdown(false, true)">
                         <a href="#" onclick="loadPage('settings')">Settings</a>
                         <a href="#" onclick="loadPage('help')">Help & FAQ</a>
+                        <a href="#" onclick="loadPage('sign-in')">Log Out</a>
                     </div>
                 </div>
             
                 <div id="page-title">Parkly</div>
             
                 <div class="top-right">
-                    <span class="notifications-icon" onclick="loadPage('notifications')">
+                    <span id="notifications-icon" onclick="loadPage('notifications')">
                         <i class="fas fa-bell"></i>
                     </span>
                 </div>

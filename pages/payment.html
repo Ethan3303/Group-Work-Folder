@@ -2,41 +2,76 @@
 <html>
 <body>
     <div id="content-container">
-        <h2>Payment Options</h1>
-        <form>
-            <input type="radio" name="pay" value="pay1">
-            <label for="pay1">PayPal</label>
-            <input type="radio" name="pay" value="pay2">
-            <label for="pay2">MasterCard</label>
-            <input type="radio" name="pay" value="pay3">
-            <label for="pay3">Visa</label><br>
-            <input type="radio" name="pay" value="pay4">
-            <label for="pay4">Maestro</label>
-            <input type="radio" name="pay" value="pay5">
-            <label for="pay5">Apple Pay</label>
-            <input type="radio" name="pay" value="pay6">
-            <label for="pay6">Amazon pay</label><br>
-            <input type="radio" name="pay" value="pay6">
-            <label for="pay6">Google pay</label>
-            <input type="radio" name="pay" value="pay6">
-            <label for="pay6">Stripe</label><br>
-            <img id="pim" src="images/pay.jpg">
+        <h2>Payment Options</h2>
+        <form id="payment-form">
+            <div class="payment-methods">
+                <div class="payment-option">
+                    <input type="radio" id="pay1" name="pay" value="pay1">
+                    <label for="pay1"><i class="fab fa-paypal"></i> PayPal</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="pay2" name="pay" value="pay2">
+                    <label for="pay2"><i class="fab fa-cc-mastercard"></i> MasterCard</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="pay3" name="pay" value="pay3">
+                    <label for="pay3"><i class="fab fa-cc-visa"></i> Visa</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="pay4" name="pay" value="pay4">
+                    <label for="pay4"><i class="fab fa-cc-amex"></i> Amex</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="pay5" name="pay" value="pay5">
+                    <label for="pay5"><i class="fab fa-apple-pay"></i> Apple Pay</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="pay6" name="pay" value="pay6">
+                    <label for="pay6"><i class="fab fa-amazon-pay"></i> Amazon pay</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="pay7" name="pay" value="pay7">
+                    <label for="pay7"><i class="fab fa-google-pay"></i> Google pay</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="pay8" name="pay" value="pay8">
+                    <label for="pay8"><i class="fab fa-stripe"></i> Stripe</label>
+                </div>
+            </div>
+            
+            <div class="card-details">
+                <div class="form-group">
+                    <label for="cardholder">Cardholder name</label>
+                    <input id="cardholder" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label for="cardnumber">Card Number</label>
+                    <div class="input-with-icon">
+                        <input id="cardnumber" type="text">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="expiration">Expiration Date</label>
+                        <input id="expiration" type="text" placeholder="MM/YY">
+                    </div>
+                    <div class="form-group half">
+                        <label for="cvv">CVV</label>
+                        <div class="input-with-icon">
+                            <input id="cvv" type="text">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
-        <label for="payment">Cardholder name</label><br>
-        <input id="payment"><br>
-
-        <label for="payment">Card Number</label><br>
-        <input id="payment"><br>
-
         
-        <label for="payment">Expiration Date</label>
-        <label for="payment">CVV</label> <br>
-        <input id="payment">
-        <input id="payment">
-
-        <div id="butzone">
-            <a href="#" id="bz">Go back</a>
-            <a href="#" id="bz">Continue with booking</a>
+        <div class="butzone">
+            <a href="#" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Go back</a>
+            <a href="#" class="btn btn-primary">Continue with booking <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 </body>

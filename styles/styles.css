@@ -33,6 +33,7 @@ and do not override this in that new file */
     padding: 0;
     box-sizing: border-box;
     font-size: calc(16px * var(--text-size-factor));
+    transition: background-color 0.3s ease, font-size 0.1s ease;
 }
 
 
@@ -105,6 +106,7 @@ body {
     position: relative;
     justify-content: space-between;
     padding: 0.5rem 0.75rem;
+    height: 45px;
 }
 
 .top-left, .top-right {
@@ -155,13 +157,13 @@ body {
     margin-bottom: 4px;
 }
 
-.settings-icon, .notifications-icon {
+#settings-icon, #notifications-icon {
     font-size: calc(20px * var(--text-size-factor));
     cursor: pointer;
     margin: 0 0.25rem;
 }
 
-.settings-icon:hover, .notifications-icon:hover {
+#settings-icon:hover, #notifications-icon:hover {
     transform: translateY(-1px);
     box-shadow: 0 6px 8px var(--shadow-color);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -201,6 +203,7 @@ body {
     flex: 1;
     overflow-y: auto;
     background-color: var(--white);
+    padding: 20px;
 }
 
 .sub-title {

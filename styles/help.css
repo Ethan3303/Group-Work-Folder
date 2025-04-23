@@ -1,0 +1,43 @@
+.contact-section, .faq-section {
+    margin: 15px 0;
+}
+
+.section-title {
+    font-size: calc(18px * var(--text-size-factor));
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    margin: 5px 0;
+    font-size: calc(14px * var(--text-size-factor));
+}
+
+.faq-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.faq-box p:nth-child(odd) {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.faq-box p:nth-child(even) {
+    color: var(--sub-text-color);
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.faq-box p:first-child {
+    margin-top: 0;
+}

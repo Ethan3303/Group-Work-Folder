@@ -6,6 +6,9 @@ function getCurrentPage() {
     return [urlParams.get("page") || "sign-in", urlParams.delete("page")];
 }
 
+const hideNavPages = ["home", "sign-in", "forgot-password", "sign-up"];
+const hideHeaderButtonPages = ["sign-in", "forgot-password", "sign-up"];
+
 function loadPage(page, extraParams = {}) {
 
     const content = document.getElementById("content");
@@ -27,7 +30,15 @@ function loadPage(page, extraParams = {}) {
 
         const navbar = document.getElementsByClassName("nav-bar");
         if (navbar && navbar[0]) {
-            navbar[0].style.display = page === "home" ? "none" : "flex";
+            navbar[0].style.display = hideNavPages.includes(page) ? "none" : "flex";
+        }
+
+
+        const settingsIcon = document.getElementById("settings-icon");
+        const notificationsIcon = document.getElementById("notifications-icon");
+        if (settingsIcon && notificationsIcon) {
+            settingsIcon.style.display = hideHeaderButtonPages.includes(page) ? "none" : "block";
+            notificationsIcon.style.display = hideHeaderButtonPages.includes(page) ? "none" : "block";
         }
 
         const allNavs = document.getElementsByClassName("nav-item");
@@ -41,7 +52,7 @@ function loadPage(page, extraParams = {}) {
         }
 
         content.innerHTML = contentToAdd.innerHTML;
-        document.getElementById("page-title").innerText = page.charAt(0).toUpperCase() + page.slice(1).replace(/-/g, " ");
+        document.getElementById("page-title").innerText = hideHeaderButtonPages.includes(page) ? "Parkly" : page.charAt(0).toUpperCase() + page.slice(1).replace(/-/g, " ");
 
         const currentParams = new URLSearchParams(window.location.search);
         if (currentParams.has("scrollTop")) {
@@ -72,4 +83,13 @@ document.addEventListener("DOMContentLoaded", () => {
     loadPage(currentPage, extra);
     setInterval(changeTime, 10000);
     changeTime();
+});
+
+// Add event listener for browser back/forward navigation
+window.addEventListener('popstate', (event) => {
+    if (!event.state) {
+        return;
+    }
+    const [currentPage, extra] = getCurrentPage();
+    loadPage(currentPage, extra);
 });

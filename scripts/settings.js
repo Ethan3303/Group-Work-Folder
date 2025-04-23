@@ -30,17 +30,14 @@ function loadSettings(force = false) {
 
 
     if (!force) return;
-    // Apply text size
     const textSizeSlider = document.getElementById('textSizeSlider');
     const textSizeValue = document.getElementById('textSizeValue');
     textSizeSlider.value = settings.textSize;
     textSizeValue.textContent = settings.textSize + '%';
     
-    // Apply dark mode
     const darkModeToggle = document.getElementById('darkModeToggle');
     darkModeToggle.checked = settings.darkMode;
     
-    // Apply text to speech
     const textToSpeechToggle = document.getElementById('textToSpeechToggle');
     textToSpeechToggle.checked = settings.textToSpeech;
 }
