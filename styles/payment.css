@@ -94,13 +94,6 @@ input:focus {
     color: var(--sub-text-color);
 }
 
-.butzone {
-    margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-}
-
 .btn {
     padding: 10px 15px;
     border-radius: 6px;

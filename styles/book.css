@@ -12,6 +12,18 @@
     color: var(--black);
 }
 
+.date input[type="date"],
+.time input[type="time"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+    font-size: calc(14px * var(--text-size-factor));
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+}
+
 #search-results {
     background-color: var(--white);
     border: 1px solid var(--secondary-color);

@@ -77,6 +77,12 @@ button {
 
 button:hover {
     background-color: var(--primary-color-hover);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.btn-secondary:hover {
+    color: black;
 }
 
 button:active {
@@ -87,7 +93,7 @@ button:active {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 15px 0;
+    gap: 10px;
 }
 
 .social-button {
@@ -108,11 +114,6 @@ button:active {
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
 }
 
-.social-button:hover {
-    background-color: #f5f5f5;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
 .social-button:active {
     transform: scale(0.98);
 }
@@ -126,6 +127,7 @@ button:active {
 
 .auth-footer p {
     margin: 8px 0;
+    font-size: calc(18px * var(--text-size-factor));
 }
 
 .auth-footer a {
