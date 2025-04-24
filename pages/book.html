@@ -6,7 +6,7 @@
         
         <div class="search-container">
             <input type="text" id="search-bar" placeholder="Search for parking locations...">
-            <div class="search-results" id="search-results">
+            <div id="search-results">
                 <div class="location-item" onclick="selectLocation('Trinity Leeds Car Park')">Trinity Leeds Car Park</div>
                 <div class="location-item" onclick="selectLocation('Q-Park The Light')">Q-Park The Light</div>
                 <div class="location-item" onclick="selectLocation('Leeds Station Car Park')">Leeds Station Car Park</div>
@@ -20,12 +20,18 @@
 
         <p class="time-head">Time & Date</p>
         <div class="date-selector">
+            <div class="date">
+                <!-- <input type="date" id="start-date" name="start-date" value="2023-10-01"> -->
+                <button>24/04/2025</button>
+            </div>
             <div class="time">
                 <input type="time" id="start-time" name="start-time" value="09:00">
             </div>
-            <div class="date">
-                <input type="date" id="start-date" name="start-date" value="2023-10-01">
-            </div>
+        </div>
+
+        <div class="butzone">
+            <button class="btn btn-primary" onclick="loadPage('payment')">24/04/2025</button>
+            <button class="btn btn-secondary" onclick="useRecentBooking()">Use Previous Details</button>
         </div>
 
         <div class="parking-options" id="parking-options">

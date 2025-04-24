@@ -1,6 +1,5 @@
 .search-container {
     position: relative;
-    margin-bottom: 20px;
 }
 
 #search-bar {
@@ -13,17 +12,18 @@
     color: var(--black);
 }
 
-.search-results {
+#search-results {
     background-color: var(--white);
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
-    margin-top: 10px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    position: absolute;
+    width: 100%;
 }
 
-.search-results.active {
+#search-results.active {
     max-height: 200px;
     overflow-y: auto;
 }
@@ -68,16 +68,6 @@
 
 .time, .date {
     flex: 1;
-}
-
-input[type="time"], input[type="date"] {
-    width: 100%;
-    padding: 10px 15px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 10px;
-    font-size: calc(14px * var(--text-size-factor));
-    background-color: var(--white);
-    color: var(--black);
 }
 
 .parking-options {
