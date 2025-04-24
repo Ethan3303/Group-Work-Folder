@@ -5,6 +5,7 @@
 }
 
 .invoice-card {
+    margin-top: 80px;
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 4px 12px var(--shadow-color);
